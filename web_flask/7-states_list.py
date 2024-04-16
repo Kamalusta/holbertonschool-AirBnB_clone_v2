@@ -17,7 +17,8 @@ def remove(self):
 
 @app.route('/states_list', strict_slashes=False)
 def list():
-    states = storage.all("State").values()
+    sort = storage.all("State").values()
+    states = sorted(sort, key=lambda x: x.name)
     return render_template('7-states_list.html', states=states)
 
 
