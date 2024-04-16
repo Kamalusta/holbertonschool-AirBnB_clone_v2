@@ -1,5 +1,0 @@
-<!doctype html>
-<TITLE>Hello</TITLE>
-<BODY>
-  <H1>Number: {{nbr}}</H>
-  </BODY>
